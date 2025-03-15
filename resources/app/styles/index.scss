@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: 'Inter', Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+.bank-card {
+    width: 100%;
+    font-size: 14px;
+}
+
+.bank-card .bank-card__header {
+    font-size: 24px;
+    font-weight: 500;
+    color: #28293D;
+    width: 100%;
+}
+
+.bank-card .bank-card__inner-wrapper {
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.bank-card .bank-card__inner-content {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.bank-card .bank-card__inner-header {
+    color: #555770;
+    font-size: 12px;
+}
+
+.bank-card .bank-card__card-icon {
+    background: #6698FA;
+    color: #fff;
+    width: 116px;
+    height: 80px;
+    border-radius: 8px;
+    padding-top: 36px;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bank-card .bank-card__card-icon_new {
+    background: #fff;
+    color: #555770;
+    text-align: center;
+    width: 116px;
+    height: 80px;
+    border-radius: 8px;
+    padding-top: 21px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bank-card__card-icon_selected {
+    width: 120px;
+    height: 84px;
+    border: 2px solid #fff;
+    outline: 2px solid #3E7BFA;
+}
+
+.bank-card__card-back {
+    width: 324px;
+    height: 208px;
+    background: url("./../images/card-back.svg");
+    font-size: 12px;
+    color: #fff;
+    padding: 48px 20px 20px 20px;
+    z-index: 1;
+}
+
+.bank-card__card-input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #E4E4EB;
+    background: #FAFAFC;
+    border-radius: 8px;
+    padding: 9px 16px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555770;
+}
+
+.bank-card__button {
+    padding: 14px 32px;
+    border-radius: 100px;
+    height: 52px;
+    width: 141px;
+    background: #3E7BFA;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bank-card__amount{
+    width: 144px;
+    height: 52px;
+    background: #FAFAFC;
+    border: 1px solid #E4E4EB;
+    padding: 16px 40px 16px 16px;
+    font-size: 16px;
+}
+
+.bank-card__amount_left{
+    border-radius: 8px 0 0 8px;
+}
+
+.bank-card__amount_right{
+    margin-left: -1px;
+    border-radius: 0 8px 8px 0;
+}
+
+.bank-card__amount-svg{
+    margin-left: -36px;
+    margin-right: 16px;
+    pointer-events: none;
+}
+
+.bank-card__card-input.bank-card__card-input_short {
+    width: 72px;
+    margin-bottom: 0;
+}
+
+.bank-card__card-back2 {
+    width: 324px;
+    height: 310px;
+    background: linear-gradient(180deg,
+        #EBEBF0 0px,
+        #EBEBF0 20px,
+        #E1E1E9 21px,
+        #E1E1E9 60px,
+        #EBEBF0 61px,
+        #EBEBF0 100%
+
+    );
+    margin-top: -208px;
+    margin-left: inherit;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #555770;
+    padding: 228px 0 0 20px;
+}
+
+.bank-card__cvv-hint{
+    color: #8F90A6;
+    font-size: 10px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.bank-card__svg{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 576px) {
+    .bank-card {
+        width: 550px;
+        padding: 40px !important;
+    }
+
+    .bank-card__card-back2 {
+        width: 170px;
+        height: 200px;
+        margin-left: -20px;
+        margin-top: inherit;
+        padding: 68px 0 0 46px;
+    }
+
+    .bank-card__cvv-hint{
+        margin-left: 0;
+    }
+}
+
+
+
